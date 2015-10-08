@@ -1,0 +1,49 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#page {
+    width: 640px;
+    margin: 25px auto;
+}
+
+#header {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#header h3 {
+    color: rgb(119, 119, 119);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+#header .click-counter-container {
+    color: #758FCE;
+    font-size: 18px;
+}
+
+#header .click-counter-container .click-counter {
+    font-weight: bold;
+}
+
+#cat-image {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#footer {
+    margin-top: 20px;
+}
+
+#footer p {
+    margin: 0;
+    color: rgb(119, 119, 119);
+    text-align: right;
+    font-size: 12px;
+}
