@@ -1,2 +1,3 @@
-# js-design-patterns-udacity
-Udacity JS Design Pattern Code Lessons
+# Udacity JS Design Pattern Code Lessons
+
+1-cat-clicker
