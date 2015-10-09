@@ -3,19 +3,25 @@
  */
 
 (function () {
-  var catClick = 0;
-  var catImage = document.getElementById('cat-image');
-  var clickCounter = document.getElementsByClassName('click-counter');
-  var clickContainer = document.getElementById("click-container");
+  var fooCat = {
+    clicks: 0
+  };
+  var barCat = {
+    clicks: 0
+  };
+  var fooCatImage = document.getElementById('fooCatImage');
+  var barCatImage = document.getElementById('barCatImage');
+  var fooClickCounter = document.getElementById('fooClickCounter');
+  var barClickCounter = document.getElementById('barClickCounter');
   var clickEvent = 'click';
-  var hideClass = 'hide';
 
-  catImage.addEventListener(clickEvent, function () {
-    catClick++;
-    clickCounter[0].innerHTML = catClick;
+  fooCatImage.addEventListener(clickEvent, pokeCat(fooCat, fooClickCounter));
+  barCatImage.addEventListener(clickEvent, pokeCat(barCat, barClickCounter));
 
-    if (clickContainer.classList.contains(hideClass)) {
-      clickContainer.classList.remove(hideClass);
-    }
-  })
+  function pokeCat (cat, clickCounter) {
+    return function () {
+      clickCounter.textContent = ++cat.clicks;
+    };
+  }
+
 })();
