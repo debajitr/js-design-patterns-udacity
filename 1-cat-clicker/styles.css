@@ -35,6 +35,11 @@ body {
 #cat-image {
     border-radius: 5px;
     cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#cat-image:hover {
+    box-shadow: 2px 2px 12px #A0A1A5;
 }
 
 #footer {
@@ -46,4 +51,8 @@ body {
     color: rgb(119, 119, 119);
     text-align: right;
     font-size: 12px;
+}
+
+.hide {
+    display: none;
 }
