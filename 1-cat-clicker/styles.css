@@ -1,58 +1,83 @@
+/* Default Setters */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 25px 50px;
 }
 
-#page {
-    width: 640px;
-    margin: 25px auto;
-}
-
-#header {
+/* Template CSS */
+header {
     border-bottom: 1px solid rgb(229, 229, 229);
     margin-bottom: 25px;
     padding-bottom: 15px;
+}
+
+header h3 {
+    color: rgb(119, 119, 119);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.image-container {
+    white-space: nowrap;
+}
+
+.image-container > div {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    white-space: normal;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.image-container > div .image-header {
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-#header h3 {
-    color: rgb(119, 119, 119);
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0;
+.image-container > div .image-header h3 {
+    color: #eb6d6d;
 }
 
-#header .click-counter-container {
+.image-container > div .image-header .counter-container {
     color: #758FCE;
     font-size: 18px;
 }
 
-#header .click-counter-container .click-counter {
+.image-container > div .image-header .click-counter {
     font-weight: bold;
 }
 
-#cat-image {
+.image-container img {
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    height: 370px;
     transition: box-shadow 0.3s;
 }
 
-#cat-image:hover {
-    box-shadow: 2px 2px 12px #A0A1A5;
+.image-container img:hover {
+    box-shadow: 0 0 25px #6f7074;
 }
 
-#footer {
+footer {
     margin-top: 20px;
 }
 
-#footer p {
-    margin: 0;
+footer p {
     color: rgb(119, 119, 119);
     text-align: right;
     font-size: 12px;
 }
 
+/* Utility Classes*/
 .hide {
     display: none;
 }
